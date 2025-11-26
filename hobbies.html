@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evgeniia Makhalina — Hobbies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Evgeniia Makhalina</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html" class="active" aria-current="page">Hobbies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Reading</li>
+        <li>Learning new things</li>
+        <li>Travelling</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Favorite TV Show Snippet</h2>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oXlWjZZGTq8?si=6DGoT9a2_dwDspGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>Favorite Song</h2>
+      <div class="spotify">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2xMaGPMw5YroV8i32HAMX0?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Evgeniia Makhalina</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evgeniia Makhalina — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Evgeniia Makhalina</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" name="age" min="0" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br /><br />
+
+        <fieldset>
+          <legend>How did you know about my page?</legend>
+          <input type="radio" id="google" name="source" value="google" />
+          <label for="google">Google</label><br />
+
+          <input type="radio" id="friend" name="source" value="friend" />
+          <label for="friend">From a friend</label><br />
+
+          <input type="radio" id="linkedin" name="source" value="linkedin" />
+          <label for="linkedin">From LinkedIn</label><br />
+
+          <input type="radio" id="other" name="source" value="other" />
+          <label for="other">Other</label><br />
+        </fieldset><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Evgeniia Makhalina</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
